@@ -9,7 +9,7 @@ class Car{
     public int light = 2;
     String NameOfOwner;
 
-    public Car(){
+    public Car(){  //Constructor
         this.Color = "black";
         this.Model = "x1";
         this.NoOfWheels= 4;
@@ -17,7 +17,7 @@ class Car{
         noOfCars++;
         numOfCars++;
     }
-    public Car(String Color, String Model , int NoOfWheels, String NameOfOwner){
+    public Car(String Color, String Model , int NoOfWheels, String NameOfOwner){ //Param ke saath constructor
         this.NameOfOwner=NameOfOwner;
         this.Color=Color;
         this.Model=Model;
@@ -25,7 +25,7 @@ class Car{
         noOfCars++;
         numOfCars++;
     }
-
+    //Below every thing is a class method. So its invoked by using classObj.MethodName
     public String show(){
         return this.NoOfWheels+" "+ this.Model+" "+ this.Color+" "+ this.NameOfOwner;
     }
